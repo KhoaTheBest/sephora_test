@@ -6,7 +6,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/#{fetch(:application)}"
-set :deploy_user, khoale
+set :deploy_user, 'khoale'
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, "2.3.1"

@@ -23,6 +23,8 @@ gem 'kaminari-mongoid', '~> 1.0', '>= 1.0.1'
 
 gem 'httparty', '~> 0.16.2'
 gem 'jb'
+gem 'faker', '~> 1.8', '>= 1.8.7'
+
 group :production, :staging do
   gem "unicorn"
   gem "unicorn-worker-killer"
@@ -36,7 +38,6 @@ group :development, :test do
   gem "guard", ">= 2.2.2", require: false
   gem "guard-livereload", require: false
   gem 'guard-rspec', '~> 4.7', '>= 4.7.3', require: false
-  gem 'faker', '~> 1.8', '>= 1.8.7'
 end
 
 group :development do
