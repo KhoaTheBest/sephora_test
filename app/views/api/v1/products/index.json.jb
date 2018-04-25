@@ -18,6 +18,7 @@ else
   {
     products: list_products,
     total_pages: @products.total_pages,
+    total_records: @products.count,
     current_page: @products.current_page
   }
 end

@@ -14,7 +14,7 @@ class Api::V1::ProductsController < ApplicationController
                                   min_price: min_price,
                                   max_price: max_price)
                        .order_by(price: sort_by_price)
-                       .page(page).per(3)
+                       .page(page).per(10)
   end
 
   def show
