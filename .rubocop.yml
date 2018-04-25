@@ -11,6 +11,7 @@ AllCops:
     - db/schema.rb
     - "tmp/**/*"
     - "vendor/**/*"
+    - "spec/**/*"
     - Gemfile
     - Guardfile
     - Rakefile
@@ -19,6 +20,7 @@ Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
 
 Metrics/AbcSize:
+  Enabled: false
   Exclude:
     - "test/**/*"
 
