@@ -34,3 +34,10 @@
 /config/secrets.yml
 /config/mongoid.yml
 /config/sidekiq.yml
+
+config/unicorn_init_production.sh
+config/unicorn_init_staging.sh
+config/unicorn_production.rb
+config/unicorn_staging.rb
+config/nginx_production.conf
+config/nginx_staging.conf

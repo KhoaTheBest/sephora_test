@@ -12,6 +12,8 @@ AllCops:
     - "tmp/**/*"
     - "vendor/**/*"
     - "spec/**/*"
+    - "config/**/*"
+    - "lib/capistrano/**/*"
     - Gemfile
     - Guardfile
     - Rakefile

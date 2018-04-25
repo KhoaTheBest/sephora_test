@@ -6,8 +6,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/#{fetch(:application)}"
-# TODO: need to define after generated
-# set :deploy_user, khoale
+set :deploy_user, khoale
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, "2.3.1"
@@ -16,8 +15,9 @@ set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all # default value
 
 # Default value for :linked_files is []
-# TODO: need to define
-# set :linked_files, fetch(:linked_files, []).push('config/mongoid.yml')
+set :linked_files, fetch(:linked_files, []).push("config/mongoid.yml",
+                                                 "config/secrets.yml",
+                                                 "config/application.yml")
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push("log",
