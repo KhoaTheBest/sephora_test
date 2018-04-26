@@ -1,0 +1,12 @@
+{
+  product: {
+    id: @product.id,
+    name: @product.name,
+    sold_out: @product.sold_out,
+    category: @product.category,
+    under_sale: @product.under_sale,
+    price: @product.price,
+    sale_price: @product.sale_price,
+    sale_text: @product.sale_text
+  }
+}
