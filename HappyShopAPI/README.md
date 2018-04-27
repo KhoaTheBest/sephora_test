@@ -15,9 +15,7 @@ This README describes the purpose of this repository and how to set up a develop
 This project requires:
 
 * Ruby 2.3.3, preferably managed using [rbenv][]
-* Chromedriver for Capybara testing
 * MongoDB must be installed and accepting connections
-* [Redis][] must be installed and running on localhost with the default port
 
 On a Mac, you can obtain all of the above packages using [Homebrew][].
 
@@ -36,10 +34,6 @@ Run the `bin/setup` script. This script will:
 ### Run it!
 
 1. Run `bin/rake test` to make sure everything works.
-2. Run `bin/rake test:system` to run system (capybara) tests.
-3. Run `bin/rails s` and `bin/sidekiq` to start the app and Sidekiq; alternatively, start both at once with `heroku local`.
-
 
 [rbenv]:https://github.com/sstephenson/rbenv
-[redis]:http://redis.io
 [Homebrew]:http://brew.sh
